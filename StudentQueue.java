@@ -76,5 +76,13 @@ Student dequeue(){
         size--;
         return dt;
 }
-
+// add View rear method
+void viewRear(){
+    if (!isEmpty()) {
+        System.out.println("Rear data: ");
+        data[rear].print();
+    } else {
+        System.out.println("Queue is empty!!!");
+    }
+}
 }

@@ -66,7 +66,8 @@ void enqueue(int dt ){
         size++;
         System.out.printf("%d is successfully added at index %d\n",dt,rear);
     } else {
-        System.out.println("Queue is full!!!");
+        System.out.println("Queue is full!!!,Program Stoped");//modify
+        System.exit(0); //exit program
     }
 }
 int dequeue(){
@@ -84,8 +85,10 @@ int dequeue(){
             }
         }
     }else{
-        System.out.println("Queue is empty!!!");
+        System.out.println("Queue is empty!!!,Program Stoped");//modify
+        System.exit(0); // exit program
     }
     return dt;
 }
+
 }
